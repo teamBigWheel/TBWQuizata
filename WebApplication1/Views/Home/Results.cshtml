@@ -1,0 +1,57 @@
+﻿@model GoToCO.Models.Questions
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Results</title>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+    <div data-role="page" id="page1">
+        <div role="main" class="ui-content" id="results">
+            <div id="loadingDiv">
+                <img src="~/Content/Images/wait_1.gif" />
+            </div>
+            <div id="content">
+                <div>
+                    <img src="/Content/Images/result-alt1.png" />
+                </div>
+                <div>
+                    <img src="/Content/Images/button_share.png" class="resultsButton shareButton" />
+                </div>
+                <div>
+                    <img src="/Content/Images/button_retry.png" class="resultsButton" />
+                </div>
+            </div>
+            <div hidden>Activity Item: @Model.Activity</div>
+            <div hidden>Event Item: @Model.Event</div>
+            <div hidden>Consumer Item: @Model.ConsumerItem</div>
+        </div>
+    </div>
+</body>
+</html>
+@section scripts{
+    <script type="text/javascript" src="~/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $("#content").hide();
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $("#loadingDiv").hide();
+                $("#content").show();
+            }, 1200);
+
+            $(".resultsButton").on('click', function () {
+                window.location.replace("/Home/Quiz");
+            });
+
+        });
+        
+        
+    </script>
+}

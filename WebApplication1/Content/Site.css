@@ -1,0 +1,142 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Arial;
+    background-color:#222;
+    color: white;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Arial;
+}
+
+div[role="main"] {
+    padding-top: 5%;
+}
+
+footer {
+    text-align:center;
+    color: #fff;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#page1 {
+    background-color:#222;
+    text-align: center;
+    text-shadow: none;
+    color: white;
+}
+
+.ui-content {
+    padding-left:0px;
+    padding-right:0px;
+    align-content:center;
+}
+
+div.ui-content#results {
+    padding-left:0px;
+}
+
+a.takeQuiz {
+    background-image: url("/Content/Images/button_takequiz.png");
+    padding-top:5%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#ButtonContainer{
+    width:100%;
+}
+
+div#buttons {
+    margin: 20px auto;
+}
+
+#leftArrow, #rightArrow, #backButton {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#SwipeImg {
+    width:95%;
+    max-height:60%;
+    padding-top: 5%;
+}
+
+.navbar-inverse {
+    background-color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #999;
+}
+    .navbar-inverse .navbar-nav>li>a:hover {
+        color: #333;
+    }
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #fff;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #999;
+}
+    .navbar-inverse .navbar-toggle:hover .icon-bar {
+        background-color: #333;
+    }
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+div#Question {
+    font-size: 14pt;
+    color: white;
+    width: 90%;
+    padding-left: 10%;
+    
+    text-align: center;
+}
+
+img#logo {
+    padding-left:3%;
+    padding-top: 1%;
+}
+
+img.resultsButton {
+    margin:5px;
+}
+    img.shareButton {
+        margin-top:20px;
+        cursor:pointer;
+    }
+    img.resultsButton {
+        cursor:pointer;
+    }
+    img#takeQuiz {
+        padding-top:5%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        cursor:pointer;
+    }
+    img#whatIsYour {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+#loadingDiv img {
+    width:50%;
+    padding-top:30%;
+}
+
+div#homeContent {
+    background-color:#222;
+}
